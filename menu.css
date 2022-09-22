@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+     background-color: rgba(0, 0, 0, 0.5); 
+     }
+
+label.logo{
+    color: white;
+    font-size: 36px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+     
+    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul li {
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-decoration: none;
+    font-family: cursive;
+}
+a.active,a:hover{
+transition: .5s;
+    }
+
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+        
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    #checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width: 100px;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all.5s;
+        
+    }
+    na ul li{
+    display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+    }
+    a:hover,a.active{
+        background: none;
+        color: black;
+        
+    }
+    #check:checked~ul{
+        left:0;
+    }
+    label.logo{
+        font-size: 30px;
+        line-height: 50px;
+        padding: 0 20px;
+    }
+       .column1 {
+  float: left;
+  width:100%;
+  padding: 2px;
+           height:100px;
+}
+
+    
+}
+#home{
+    justify-content: center;
+    align-items: center;
+    color: black;
+    }
+
+p{
+     font-family: cursive;
+    font-style: italic;
+    font-size:5rem;
+}
+.hover{
+    font-size: 10vw;
+    font-style: normal;
+}
+.heading{
+        font-family: cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    padding-top: 80px;
+    }
