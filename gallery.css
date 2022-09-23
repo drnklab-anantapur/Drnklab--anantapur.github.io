@@ -124,6 +124,7 @@ p{
   float: left;
   width: 33.33%;
   padding: 5px;
+           
            height:auto;
 }
 
@@ -132,13 +133,10 @@ p{
   content: "";
   clear: both;
   display: table;
+
     
 }
-
-.heading{
-    font-family: cursive;
-    font-size: 2rem;
-    text-align: center;
-    color: black;
-    padding-top: 80px;
+.gallery{
+    
+    padding-top: 90px;
 }
