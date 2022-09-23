@@ -101,6 +101,12 @@ transition: .5s;
 
     
 }
+@media (max-width:480px){
+    #home img{
+        height: 300px; 
+    }
+ 
+}
 #home{
     justify-content: center;
     align-items: center;
