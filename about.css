@@ -58,6 +58,9 @@ transition: .5s;
     #checkbtn{
         display:block;
     }
+    .about{
+        padding-top:5px;
+    }
     ul{
         position:fixed;
         width: 100px;
