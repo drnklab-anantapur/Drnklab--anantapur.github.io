@@ -14,13 +14,8 @@ img {vertical-align: middle;}
    
 
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
+/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -47,18 +42,8 @@ img {vertical-align: middle;}
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
-/* Number text (1/3 etc) */
+/* Number text (1/15 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -67,21 +52,9 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+
+
 
 /* Fading animation */
 .fade {
@@ -100,7 +73,7 @@ img {vertical-align: middle;}
 }
 </style>
 </head>
-<body>
+<body><header>
      <nav class="navbar">
             <input type="checkbox" id="check">
             <label for="check" id="checkbtn" class="logo">Drnklab</label>
@@ -113,118 +86,103 @@ img {vertical-align: middle;}
             
             </ul>
         </nav>
-   
+    </header>
+    
 
-<div class="slideshow-container">
+<div class="slideshow-container" style="padding-top: 90px">
 
 <div class="mySlides fade">
   <div class="numbertext">1 /15</div>
   <img src="menu_page-0001.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Text</div>
+ 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 15</div>
   <img src="menu_page-0002.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Two</div>
+  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 15</div>
   <img src="menu_page-0003.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Three</div>
 </div>
     <div class="mySlides fade">
   <div class="numbertext">4 / 15</div>
   <img src="menu_page-0004.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Text</div>
+  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5/ 15</div>
   <img src="menu_page-0005.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Two</div>
+  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">6 / 15</div>
   <img src="menu_page-0006.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Three</div>
-</div><div class="mySlides fade">
+  
+</div>
+    <div class="mySlides fade">
   <div class="numbertext">7 / 15</div>
   <img src="menu_page-0007.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Text</div>
+  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">8 / 15</div>
   <img src="menu_page-0008.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Two</div>
-</div>
+    </div>
+  
 
 <div class="mySlides fade">
   <div class="numbertext">9/ 15</div>
   <img src="menu_page-0009.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Three</div>
+  
 </div><div class="mySlides fade">
   <div class="numbertext">10/ 15</div>
   <img src="menu_page-0010.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Text</div>
+  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">11/ 15</div>
   <img src="menu_page-0011.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Two</div>
+  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">12/ 15</div>
   <img src="menu_page-0012.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Three</div>
+  
 </div>
     <div class="mySlides fade">
   <div class="numbertext">13/ 15</div>
   <img src="menu_page-0013.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Text</div>
+  
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">14/ 15</div>
   <img src="menu_page-0014.jpg" style="width:100%;height:700px">
-  <div class="text">Caption Two</div>
+
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">15 / 15</div>
   <img src="menu_page-0015.jpg" style="width:100%;height:700px" >
-  <div class="text">Caption Three</div>
+  
 </div>
+    </div>
 
 <a class="prev" onclick="plusSlides(-1)">❮</a>
 <a class="next" onclick="plusSlides(1)">❯</a>
 
-</div>
+
 <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-    <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span> 
-    <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span> 
-  <span class="dot" onclick="currentSlide(10)"></span>
-  <span class="dot" onclick="currentSlide(11)"></span> 
-  <span class="dot" onclick="currentSlide(12)"></span> 
-  <span class="dot" onclick="currentSlide(13)"></span> 
-  <span class="dot" onclick="currentSlide(14)"></span>
-    <span class="dot" onclick="currentSlide(15)"></span> 
-  
-</div>
+
 
 <script>
 let slideIndex = 1;
@@ -254,6 +212,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+   
 
 </body>
 </html> 
