@@ -147,7 +147,10 @@ p{
     color: black;
     margin: 20px 0;
 }
-
+.contact{
+    
+    padding-top: 100px;
+}
 
 .add{
     text-align: center;
