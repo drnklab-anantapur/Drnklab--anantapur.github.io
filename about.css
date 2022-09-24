@@ -4,6 +4,7 @@
     box-sizing: border-box;
     
 }
+
 .navbar{
     position: fixed;
     width: 100%;
@@ -12,7 +13,7 @@
 
 label.logo{
     color: white;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
@@ -21,7 +22,7 @@ label.logo{
 }
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 30px;
     
 }
 nav ul li {
@@ -33,13 +34,24 @@ nav ul li {
 nav ul li a{
     color: white;
     font-size: 17px;
-    padding: 7px 13px;
+    padding: 7px 10px;
     text-decoration: none;
     font-family: cursive;
 }
 a.active,a:hover{
 transition: .5s;
     }
+.checkbtn{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    padding-top: 28px;
+    cursor: pointer;
+    display: none;
+    
+}
 
 #check{
     display: none;
@@ -53,21 +65,20 @@ transition: .5s;
     nav ul li a{
         font-size: 16px;
     }
+   
 }
 @media (max-width:858px){
-    #checkbtn{
+    .checkbtn{
         display:block;
-    }
-    .about{
-        padding-top:5px;
+        padding-top: 11px;
     }
     ul{
         position:fixed;
         width: 100px;
-        height: 100vh;
+        height: 80vh;
         background: white;
-        top: 80px;
-        left: -100%;
+        top: 50px;
+        left:-100%;
         text-align: center;
         transition: all.5s;
         
@@ -76,6 +87,7 @@ transition: .5s;
     display: block;
         margin: 50px 0;
         line-height: 30px;
+    
         
     }
     nav ul li a{
@@ -96,6 +108,7 @@ transition: .5s;
         padding: 0 20px;
     }
 }
+  
     .heading{
         font-family: cursive;
     font-size: 2rem;
